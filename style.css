@@ -1,0 +1,28 @@
+.profile-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.add-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #E41D56 !important;
+}
+
+.add-icon:hover {
+    background-color: #ba1947!important;
+}
+
+
+.filter-buttons {
+    border: solid 1px rgb(189, 189, 189) !important;
+}
+
+.filter-buttons:hover {
+    background-color: #e8e7e7;
+}
+
+.carousel-inner {
+    width: 220px;
+    height: 150px;
+}
