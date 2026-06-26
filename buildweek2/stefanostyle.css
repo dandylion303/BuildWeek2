@@ -1,0 +1,52 @@
+
+
+main{
+    margin: 15vh 20vw;
+}
+
+h1{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+img{
+    background-size: cover;
+}
+
+.first-img{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.second-img{
+    border-top-right-radius: 20px;
+}
+
+.third-img{
+    border-bottom-right-radius: 20px;
+}
+
+.house-description, div{
+    margin-left: 0;
+}
+
+h2{
+    margin-top: 8vh;
+    font-size: 1.2rem ;
+}
+
+.row{ 
+    border: solid red 1px;
+}
+
+.prova{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.description-house{
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
