@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./claudiaStyle.css">
+    <title>Airbnb</title>
+</head>
+
+<body>
+
+
+    <footer class=" bg-body-tertiary pt-5">
+        <section class="container-fluid">
+            <h2 class="h3 pb-2">Inspiration for future travel</h2>
+
+            <nav aria-label="Travel categories" class="position-relative">
+
+                <button class="nav-arrow nav-arrow-left d-lg-none" id="arrowLeft" aria-hidden="true">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+
+                <button class="nav-arrow nav-arrow-right d-lg-none" id="arrowRight" aria-hidden="true">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+
+                <div class="nav-fade-right d-lg-none" id="fadeRight"></div>
+
+                <ul class="menu list-unstyled d-flex gap-4 fw-medium border-bottom scrollable-nav" id="navMenu">
+                    <li><button class="nav-filter mb-0 fw-medium" aria-pressed="true">Popular</button></li>
+                    <li><button class="nav-filter mb-0 fw-medium" aria-pressed="false">On the coast</button></li>
+                    <li><button class="nav-filter mb-0 fw-medium" aria-pressed="false">Historic destinations</button>
+                    </li>
+                    <li><button class="nav-filter mb-0 fw-medium" aria-pressed="false">Islands</button></li>
+                    <li><button class="nav-filter mb-0 fw-medium" aria-pressed="false">Mountain</button></li>
+                    <li><button class="nav-filter mb-0 fw-medium" aria-pressed="false">Activity</button></li>
+                    <li>
+                        <div class="nav-indicator" id="navIndicator"></div>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <div class="travel-destinations container-fluid pt-4">
+            <div class="row pb-5">
+                <div class="col-6 col-md">
+                    <ul class="list-unstyled d-flex flex-column gap-4">
+                        <li>
+                            <a href="#" class="text-decoration-none text-black">
+                                <span class="d-block mb-0 fw-medium">Ravenna</span>
+                                <span class="d-block mb-0 text-secondary">Stays in villas</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-black">
+                                <span class="d-block mb-0 fw-medium">Copenhagen</span>
+                                <span class="d-block mb-0 text-secondary">Stays in apartments</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-black">
+                                <span class="d-block mb-0 fw-medium">Submarine</span>
+                                <span class="d-block mb-0 text-secondary">Stays in villas</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md">
+                    <ul class="list-unstyled d-flex flex-column gap-4">
+                        <li>
+                            <a href="#" class="text-decoration-none text-black">
+                                <span class="d-block mb-0 fw-medium">Giardini Naxos</span>
+                                <span class="d-block mb-0 text-secondary">Stays in apartments</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-black">
+                                <span class="d-block mb-0 fw-medium">Lecce</span>
+                                <span class="d-block mb-0 text-secondary">Stays in houses</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-black">
+                                <span class="d-block mb-0 fw-medium">Nice</span>
+                                <span class="d-block mb-0 text-secondary">Stays in houses</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md">
+                    <ul class="list-unstyled d-flex flex-column gap-4">
+                        <li>
+                            <a href="#" class="text-decoration-none text-black">
+                                <span class="d-block mb-0 fw-medium">New York</span>
+                                <span class="d-block mb-0 text-secondary">Holiday homes</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-black">
+                                <span class="d-block mb-0 fw-medium">Montesilvano</span>
+                                <span class="d-block mb-0 text-secondary">Stays in houses</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-black">
+                                <span class="d-block mb-0 fw-medium">Otranto</span>
+                                <span class="d-block mb-0 text-secondary">Holiday homes</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md">
+                    <ul class="list-unstyled d-flex flex-column gap-4">
+                        <li>
+                            <a href="#" class="text-decoration-none text-black">
+                                <span class="d-block mb-0 fw-medium">Sorrento</span>
+                                <span class="d-block mb-0 text-secondary">Stays in houses</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-black">
+                                <span class="d-block mb-0 fw-medium">Varazze</span>
+                                <span class="d-block mb-0 text-secondary">Stays in villas</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-black">
+                                <span class="d-block mb-0 fw-medium">Naples</span>
+                                <span class="d-block mb-0 text-secondary">Holiday homes</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md">
+                    <ul class="list-unstyled d-flex flex-column gap-4">
+                        <li>
+                            <a href="#" class="text-decoration-none text-black">
+                                <span class="d-block mb-0 fw-medium">Riccione</span>
+                                <span class="d-block mb-0 text-secondary">Stays in apartments</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-black">
+                                <span class="d-block mb-0 fw-medium">Bucharest</span>
+                                <span class="d-block mb-0 text-secondary">Stays in apartments</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-black">
+                                <span class="d-block mb-0 fw-medium">Ostuni</span>
+                                <span class="d-block mb-0 text-secondary">Holiday homes</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md">
+                    <ul class="list-unstyled d-flex flex-column gap-4">
+                        <li>
+                            <a href="#" class="text-decoration-none text-black">
+                                <span class="d-block mb-0 fw-medium">Los Angeles</span>
+                                <span class="d-block mb-0 text-secondary">Stays in apartments</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-black">
+                                <span class="d-block mb-0 fw-medium">Bologna</span>
+                                <span class="d-block mb-0 text-secondary">Holiday homes</span>
+                            </a>
+                        </li>
+                        <li>
+                            <button id="show-more"
+                                class="btn p-0 border-0 bg-transparent d-inline-flex align-items-center">
+                                <span class="d-block mb-0 fw-medium">Show more</span>
+                                <i class="bi bi-chevron-down ms-1"></i>
+                            </button>
+                        </li>
+                        <li id="show-element" class="d-none"></li>
+                    </ul>
+                </div>
+
+                <div id="extra-destinations" class="d-none">
+                    <div class="row">
+                        <div class="col-6 col-md">
+                            <ul class="list-unstyled d-flex flex-column gap-4">
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Alassio</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in apartments</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Alba Adriatica</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in villas</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Padua</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in apartments</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Perugia</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in villas</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Madrid</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in apartments</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Agropoli</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in apartments</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Annecy</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in apartments</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Menton</span>
+                                        <span class="d-block mb-0 text-secondary">Holiday homes</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-md">
+                            <ul class="list-unstyled d-flex flex-column gap-4">
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Paris</span>
+                                        <span class="d-block mb-0 text-secondary">Holiday homes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">London</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in apartments</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Lake Como</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in villas</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Olbia</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in houses</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Follonica</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in houses</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Gallipoli</span>
+                                        <span class="d-block mb-0 text-secondary">Holiday homes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">CefalÃ¹</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in villas</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Athens</span>
+                                        <span class="d-block mb-0 text-secondary">Holiday homes</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-md">
+                            <ul class="list-unstyled d-flex flex-column gap-4">
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Menton</span>
+                                        <span class="d-block mb-0 text-secondary">Holiday homes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Florence</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in apartments</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Loano</span>
+                                        <span class="d-block mb-0 text-secondary">Holiday homes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Santorini</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in apartments</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Marina di Massa</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in apartments</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Turin</span>
+                                        <span class="d-block mb-0 text-secondary">Holiday homes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Rome</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in apartments</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Lampedusa</span>
+                                        <span class="d-block mb-0 text-secondary">Holiday homes</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-md">
+                            <ul class="list-unstyled d-flex flex-column gap-4">
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Antibes</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in houses</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Liguria Stone</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in villas</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Tortoreto Lido</span>
+                                        <span class="d-block mb-0 text-secondary">Holiday homes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Formentera</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in apartments</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Barcelona</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in houses</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Villasimius</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in houses</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Valencia</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in villas</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-md">
+                            <ul class="list-unstyled d-flex flex-column gap-4">
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Favignana</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in apartments</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">San Vito Lo Capo</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in houses</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Alghero</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in apartments</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Gaeta</span>
+                                        <span class="d-block mb-0 text-secondary">Holiday homes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Pescara</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in villas</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Dublin</span>
+                                        <span class="d-block mb-0 text-secondary">Holiday homes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Lido di Jesolo</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in houses</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-md">
+                            <ul class="list-unstyled d-flex flex-column gap-4">
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Spello</span>
+                                        <span class="d-block mb-0 text-secondary">Holiday homes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Lake Garda</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in villas</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Budapest</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in villas</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Rum raisin</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in villas</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Siena</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in apartments</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Vieste</span>
+                                        <span class="d-block mb-0 text-secondary">Stays in houses</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-black">
+                                        <span class="d-block mb-0 fw-medium">Viareggio</span>
+                                        <span class="d-block mb-0 text-secondary">Holiday homes</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="container-fluid mt-4 footer-col">
+                <div class="row border-bottom pb-4">
+                    <div class="col-12 col-md footer-col">
+                        <h2 class="h6 d-block mb-3 fw-medium">Assistance</h2>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#" class="decoration-hover text-black">
+                                    <span class="d-block mb-3">Help Center</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="decoration-hover text-black">
+                                    <span class="d-block mb-3">Get help with a security issue</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="decoration-hover text-black">
+                                    <span class="d-block mb-3">AirCover</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="decoration-hover text-black">
+                                    <span class="d-block mb-3">Anti-discrimination</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="decoration-hover text-black">
+                                    <span class="d-block mb-3">Disability support</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="decoration-hover text-black">
+                                    <span class="d-block mb-3">Cancellation options</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="decoration-hover text-black">
+                                    <span class="d-block mb-3">Report a problem in the neighborhood</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md footer-col">
+                        <h2 class="h6 d-block mb-3 fw-medium">Host</h2>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#" class="decoration-hover text-black">
+                                    <span class="d-block mb-3">Open an Airbnb</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="decoration-hover text-black">
+                                    <span class="d-block mb-3">Offer your experience on Airbnb</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="decoration-hover text-black">
+                                    <span class="d-block mb-3">Offer your service on Airbnb</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="decoration-hover text-black">
+                                    <span class="d-block mb-3">AirCover for hosts</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="decoration-hover text-black">
+                                    <span class="d-block mb-3">Host Resources</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="decoration-hover text-black">
+                                    <span class="d-block mb-3">Community forum</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="decoration-hover text-black">
+                                    <span class="d-block mb-3">Host responsibly</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="decoration-hover text-black">
+                                    <span class="d-block mb-3">Attend a free hospitality class</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="decoration-hover text-black">
+                                    <span class="d-block mb-3">Find a co-host</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="decoration-hover text-black">
+                                    <span class="d-block mb-3">Invite a host</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                   <div class="col-12 col-md">
+                        <h2 class="h6 d-block mb-3 fw-medium">Airbnb</h2>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#" class="decoration-hover text-black">
+                                    <span class="d-block mb-3">Summer Release 2026</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="decoration-hover text-black">
+                                    <span class="d-block mb-3">Newsroom</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="decoration-hover text-black">
+                                    <span class="d-block mb-3">Job opportunities</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="decoration-hover text-black">
+                                    <span class="d-block mb-3">Investors</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="decoration-hover text-black">
+                                    <span class="d-block mb-3">Gift card</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="decoration-hover text-black">
+                                    <span class="d-block mb-3">Stays with Airbnb.org</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+           
+        </section>
+
+        <section class="container-fluid mt-4">
+            <div class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center gap-3 gap-lg-0 pb-5">
+
+                <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center order-2 order-lg-1">
+
+                    <small class="me-3">© 2026 Airbnb, Inc.</small>
+
+                    <ul class="list-unstyled d-flex flex-wrap mb-0 gap-2">
+                        <li><span class="d-none d-md-inline">·</span><a href="#" class="decoration-hover text-black"> Privacy</a></li>
+                        <li><span>·</span><a href="#" class="decoration-hover text-black"> Terms</a></li>
+                        <li><span>·</span><a href="#" class="decoration-hover text-black"> Company details</a></li>
+                    </ul>
+                </div>
+
+                <div class="d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-3 order-1 order-lg-2">
+
+                    <div class="d-flex align-items-center gap-2">
+                        <a href="#" class="text-black"><i class="bi bi-globe"></i></a>
+                        <a href="#" class="text-decoration-none text-black fw-medium">English (US)</a>
+                        <a href="#" class="text-decoration-none text-black fw-medium">$ USD</a>
+                    </div>
+
+                    <ul class="list-unstyled d-flex mb-0 gap-3 social-icons">
+                        <li><a href="#" class="text-black"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="#" class="text-black"><i class="bi bi-twitter-x"></i></a></li>
+                        <li><a href="#" class="text-black"><i class="bi bi-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scriptClaudia.js"></script>
+</body>
+
+</html>
