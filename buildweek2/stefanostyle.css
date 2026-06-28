@@ -1,7 +1,6 @@
 
-
 main{
-    margin: 15vh 20vw;
+    margin: 5vh 20vw;
 }
 
 h1{
@@ -9,26 +8,46 @@ h1{
     padding: 0 !important;
 }
 
-
 img{
     background-size: cover;
 }
 
 .first-img{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.img-house img{
+    transition: transform 0.3s ease,
+    box-shadow 0.3s ease,
+    filter 0.3s ease;
+}
+
+.img-house img:hover{
+    transform: scale(1.03);
+    filter: brightness(1.05);
+    cursor: pointer;
 }
 
 .second-img{
-    border-top-right-radius: 20px;
+    border-top-right-radius: 15px;
 }
 
 .third-img{
-    border-bottom-right-radius: 20px;
+    border-bottom-right-radius: 15px;
 }
 
 .house-description, div{
     margin-left: 0;
+}
+
+#house p:nth-child(2){
+    font-size: .8em;
+    color: darkgrey;
+}
+
+.house-description span{
+    color: #8e8e8e;
 }
 
 h2{
@@ -36,17 +55,54 @@ h2{
     font-size: 1.2rem ;
 }
 
-.row{ 
-    border: solid red 1px;
-}
-
 .prova{
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.description-house{
+.description{
     padding-left: 10px;
     padding-right: 10px;
+}
 
+.house-description span{
+    font-size: 0.7em;
+}
+
+.house-description div{
+    margin: 2vh 0;
+}
+
+
+h3{
+    font-size: 0.7em;
+    font-weight: bolder;
+}
+
+#end{
+    margin-top: 10vh;
+}
+
+h4{
+    font-size: 0.7em;
+}
+
+.show-review span{
+    font-size: 0.7em;
+}
+
+.booking-card{
+    position: sticky;
+    top: 100px;
+}
+
+.booking-card .card{
+    width: 100%;
+    max-width: 450px;
+    margin-left: auto;
+    border-radius: 20px;
+}
+
+.card{
+    box-shadow: 0 6px 20px rgba(0,0,0,.12) !important;
 }
