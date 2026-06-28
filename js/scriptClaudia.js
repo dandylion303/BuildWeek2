@@ -1,9 +1,9 @@
 /* Funzione per l'animazione della barra sotto i bottoni di navigazione */
 function initFooter() {
 
-  const buttons = document.querySelectorAll(".menu button");
-  const indicator = document.getElementById("navIndicator");
-  const nav = document.getElementById("navMenu");
+  const buttons = document.querySelectorAll(".menu button")
+  const indicator = document.getElementById("navIndicator")
+  const nav = document.getElementById("navMenu")
 
   function moveIndicator(btn) {
     const navRect = nav.getBoundingClientRect()
@@ -50,16 +50,16 @@ function initFooter() {
       buttons.forEach((item) => {
         item.classList.remove("active")
         item.setAttribute("aria-pressed", "false")
-      });
+      })
 
-      this.classList.add("active");
+      this.classList.add("active")
       this.setAttribute("aria-pressed", "true")
 
       moveIndicator(this)
 
-      const category = this.textContent.trim();
-      currentCategory = category;
-      renderDestinations(category);
+      const category = this.textContent.trim()
+      currentCategory = category
+      renderDestinations(category)
     })
   })
 
@@ -243,65 +243,63 @@ function initFooter() {
       { city: "Yellowstone", type: "Cabins" },
       { city: "Jasper", type: "Nature cabins" },
     ]
-  };
+  }
 
-  const row = document.getElementById("destinationsRow");
+  const row = document.getElementById("destinationsRow")
 
-  const cities = document.querySelectorAll(".city");
-  const types = document.querySelectorAll(".type");
+  const cities = document.querySelectorAll(".city")
+  const types = document.querySelectorAll(".type")
 
   function renderDestinations(category) {
 
-    const list = destinations[category];
+    const list = destinations[category]
 
     list.forEach((item, index) => {
 
-      cities[index].textContent = item.city;
-      types[index].textContent = item.type;
+      cities[index].textContent = item.city
+      types[index].textContent = item.type
 
-    });
-
+    })
+      renderDestinations(buttons[0].textContent.trim())
   }
-  renderDestinations(buttons[0].textContent.trim());
+
 
 
   (function search() {
-    const nav = document.getElementById('mobileBottomNav');
-    const tabs = document.querySelectorAll('.bottom-nav-item');
-    let lastScrollY = window.scrollY;
-    let ticking = false;
+    const nav = document.getElementById('mobileBottomNav')
+    const tabs = document.querySelectorAll('.bottom-nav-item')
+    let lastScrollY = window.scrollY
+    let ticking = false
 
 
     window.addEventListener('scroll', function () {
       if (!ticking) {
         window.requestAnimationFrame(function () {
-          const currentScrollY = window.scrollY;
-          const delta = currentScrollY - lastScrollY;
+          const currentScrollY = window.scrollY
+          const delta = currentScrollY - lastScrollY
 
           if (delta > 5) {
-            // scroll verso il basso → nascondi
-            nav.classList.add('hidden');
+            
+            nav.classList.add('hidden')
           } else if (delta < -5) {
-            // scroll verso l'alto → mostra
-            nav.classList.remove('hidden');
+           
+            nav.classList.remove('hidden')
           }
 
-          lastScrollY = currentScrollY;
-          ticking = false;
-        });
-        ticking = true;
+          lastScrollY = currentScrollY
+          ticking = false
+        })
+        ticking = true
       }
-    });
+    })
 
-    // Gestione tab attivo al click
     tabs.forEach(function (tab) {
       tab.addEventListener('click', function (e) {
-        e.preventDefault();
-        tabs.forEach(function (t) { t.classList.remove('active'); });
-        tab.classList.add('active');
-      });
-    });
-  })();
-
+        e.preventDefault()
+        tabs.forEach(function (t) { t.classList.remove('active') })
+        tab.classList.add('active')
+      })
+    })
+  })()
 
 }
