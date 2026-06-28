@@ -1,8 +1,6 @@
-@media (min-width: 1400px) {
-    .container, .container-xxl {
-        max-width: 75%;
-        padding-left: 2rem;
-        padding-right: 2rem;
+@media (min-width: 2560px) {
+    .container {
+        max-width: 1760px;
     }
 }
 
@@ -28,8 +26,6 @@
 .filter-buttons:hover {
     background-color: #e8e7e7;
 }
-
-
 
 .carousel-inner {
     width: 100%;

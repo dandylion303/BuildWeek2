@@ -21,7 +21,7 @@
 
     <main>
         <section>
-            <div class="description-house">
+            <div class="description">
                 <div class="row row-cols-1">
                     <h1 class="fs-3"><b>Blarmor home</b></h1>
                 </div>
@@ -37,179 +37,191 @@
 
                 </div>
             </div>
-        </section >
+        </section>
         <section class="img-house">
-        <div class="row row-cols-2 d-lg-flex prova">
-            <div class="m-0 p-0 pe-1">
-                <img class="first-img object-fit-lg-cover w-100 h-100" src="./assets/5.webp" alt="">
-            </div>
-            <div class="m-0 p-0">
-                <div class="row row-cols-2 d-lg-flex w-100 m-0 p-0">
-                    <div class="m-0 pe-1 pb-1 ps-1">
-                        <img class="object-fit-lg-cover w-100 h-100" src="./assets/2.webp" alt="">
-                    </div>
-                    <div class="m-0 pe-0 pb-1 ps-1">
-                        <img class="second-img object-fit-lg-cover w-100 h-100" src="./assets/3.webp" alt="">
-                    </div>
-                    <div class="m-0 pe-1 pt-1 ps-1 pb-lg-0">
-                        <img class="object-fit-lg-cover w-100 h-100" src="./assets/4.webp" alt="">
-                    </div>
-                    <div class="m-0 pe-0 pt-1 ps-1 pb-0">
-                        <img class="third-img object-fit-lg-cover w-100 h-100" src="./assets/1.webp" alt="">
+            <div class="row row-cols-2 d-lg-flex prova">
+                <div class="m-0 p-0 pe-1">
+                    <img class="first-img object-fit-lg-cover w-100 h-100" src="./assets/5.webp" alt="">
+                </div>
+                <div class="m-0 p-0">
+                    <div class="row row-cols-2 d-lg-flex w-100 m-0 p-0">
+                        <div class="m-0 pe-1 pb-1 ps-1">
+                            <img class="object-fit-lg-cover w-100 h-100" src="./assets/2.webp" alt="">
+                        </div>
+                        <div class="m-0 pe-0 pb-1 ps-1">
+                            <img class="second-img object-fit-lg-cover w-100 h-100" src="./assets/3.webp" alt="">
+                        </div>
+                        <div class="m-0 pe-1 pt-1 ps-1 pb-lg-0">
+                            <img class="object-fit-lg-cover w-100 h-100" src="./assets/4.webp" alt="">
+                        </div>
+                        <div class="m-0 pe-0 pt-1 ps-1 pb-0">
+                            <img class="third-img object-fit-lg-cover w-100 h-100" src="./assets/1.webp" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <div class="row mt-5">
+            <div class="col-lg-7">
+
+
+                <section class="house-description">
+                    <h2><b>House - Host: Erica</b></h2>
+                    <div id="house">
+                        <p class="m-0">3 rooms &middot; Perfect place to visit the Loch Ness and go looking for Nessie
+                        </p>
+                        <p class="d-block fw-bold mt-0">Show host details</p>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-house-door fs-5"></i>
+                        <div class="px-3 ms-1 ">
+                            <h3>House</h3>
+                            <span class="co">You will have the whole premise for you</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <ion-icon class="fs-5" name="sparkles-outline"></ion-icon>
+                        <div class="px-3 ms-1">
+                            <h3>Advance Cleaning Methods</h3>
+                            <span>The host is committing to our 5-step cleaning proces.</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-geo-alt fs-5"></i>
+                        <div class="px-3 ms-1">
+                            <h3>Inverness</h3>
+                            <span>5 Kilmore Rd</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-calendar3 fs-5"></i>
+                        <div class="px-3 ms-1">
+                            <h3>Cancellation Terms And Fees</h3>
+                            <span>Add your travel dates to know details about cancellation fees and terms</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-book fs-5"></i>
+                        <div class="px-3 ms-1">
+                            <h3>Rules Of The House</h3>
+                            <span>It's forbidden to host parties, bring animals and smoke.</span>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section id="form">
+                    <form action="#" method="post">
+                        <div class="row align-content-center">
+                            <div class="col-lg-6">
+                                <label for="name">Name</label><br>
+                                <div id="name" class="input-group mb-3 mt-1">
+
+                                    <input type="text" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" placeholder="Enter name">
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+
+                                <label for="rating">Rating</label><br>
+                                <select id="rating" class="form-select mt-1" aria-label="Default select example">
+                                    <option selected>★</option>
+                                    <option value="1">★★</option>
+                                    <option value="2">★★★</option>
+                                    <option value="3">★★★★</option>
+                                    <option value="4">★★★★★</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="" for="text">Review</label><br>
+                            <div id="text" class="form-floating mt-1">
+                                <textarea class="form-control " placeholder="Leave a comment here"
+                                    id="floatingTextarea2" style="height: 150px"></textarea>
+                                <label class="ps-4" for="floatingTextarea2"> Type in your review</label>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+
+            </div>
+
+            <!-- COLONNA DESTRA -->
+            <div class="col-lg-5">
+                <aside class="booking-card mt-lg-5">
+                    <div class="card shadow-lg border-0 w-100">
+                        <div class="card-body">
+                            <div class="row row-cols-2 row-cols-md-2 row-cols-lg-2">
+                                <span class="card-title">Add dates to<br> see the prices</span>
+                                <p class="text-end"><span class="text-danger">★</span> 4.0, 6 reviews</p>
+                            </div>
+                            <div class="border rounded-4 overflow-hidden mt-4">
+
+                                <div class="row g-0 ">
+
+                                    <div class="col-6 border-end">
+                                        <div class="pt-3 pb-3 ps-2 pe-2">
+                                            <input type="date" class="form-control border-0 p-0">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <div class="pt-3 pb-3 ps-2 pe-2">
+                                            <input type="date" class="form-control border-0 p-0">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="border-top pt-3 pb-3 ps-2 pe-2">
+                                    <input type="text" class="form-control border-0 p-0" placeholder="Guests">
+                                </div>
+
+                            </div>
+                            <a href="#" class="btn btn-danger w-100 mt-3">Cancel Booking</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <section id="end">
+                <div class="row row-cols-lg-2">
+                    <div>
+                        <div class="d-flex align-items-center gap-2">
+                            <img width="50" src="./assets/propic.png" alt="">
+                            <div class="show-review">
+                                <h4 class="m-0"><b>Noemi</b></h4>
+                                <span>Jan 2021</span>
+                            </div>
+                        </div>
+
+                        <p class="mt-1">Contrary to other reviews, I was cold and couldn't figure out how to turn on the
+                            heating... otherwise amazing house.
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="d-flex align-items-center gap-2">
+                            <img width="50" src="./assets/propic.png" alt="">
+                            <div class="show-review">
+                                <h4 class="m-0"><b>Enrico</b></h4>
+                                <span>Jan 2021</span>
+                            </div>
+                        </div>
+                        <p class="mt-1">Amazing place. I've been here with my daughter to take a pictures and we were
+                            not
+                            disappointed!</p>
+                    </div>
+                </div>
+            </section>
         </div>
-        </section>
-
-        <section class="house-description">
-            <h2><b>House - Host: Erica</b></h2>
-            <div>
-                <p class="m-0">3 rooms &middot; Perfect place to visit the Loch Ness and go looking for Nessie</p>
-                <p class="d-block fw-bold text-secondary fs-6 mt-0">Show host details</p>
-            </div>
-
-            <div class="d-flex align-items-center">
-                <i class="bi bi-house-door"></i>
-                <div class="px-3 ms-1">
-                    <h3>House</h3>
-                    <span>You will have the whole premise for you</span>
-                </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-                <ion-icon name="sparkles-outline"></ion-icon>
-                <div class="px-3 ms-1">
-                    <h3>Advance Cleaning Methods</h3>
-                    <span>The host is committing to our 5-step cleaning proces.</span>
-                </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-                <i class="bi bi-geo-alt"></i>
-                <div class="px-3 ms-1">
-                    <h3>Inverness</h3>
-                    <span>5 Kilmore Rd</span>
-                </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-                <i class="bi bi-calendar3"></i>
-                <div class="px-3 ms-1">
-                    <h3>Cancellation Terms And Fees</h3>
-                    <span>Add your travel dates to know details about cancellation fees and terms</span>
-                </div>
-            </div>
-
-            <div class="d-flex align-items-center">
-                <i class="bi bi-book"></i>
-                <div class="px-3 ms-1">
-                    <h3>Rules Of The House</h3>
-                    <span>It's forbidden to host parties, bring animals and smoke.</span>
-                </div>
-            </div>
-
-        </section>
-
-        <section id="form">
-            <form action="#" method="post">
-                <div class="row align-content-center">
-                    <div class="col-lg-6">
-                        <label for="name">Name</label><br>
-                        <div id="name" class="input-group mb-3">
-
-                            <input type="text" class="form-control" aria-label="Sizing example input"
-                                aria-describedby="inputGroup-sizing-default" placeholder="Enter name">
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-
-                        <label for="rating">Rating</label><br>
-                        <select id="rating" class="form-select" aria-label="Default select example">
-                            <option selected>★</option>
-                            <option value="1">★★</option>
-                            <option value="2">★★★</option>
-                            <option value="3">★★★★</option>
-                            <option value="4">★★★★★</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <label for="text">Review</label><br>
-                    <div id="text" class="form-floating">
-                        <textarea class="form-control w-75" placeholder="Leave a comment here" id="floatingTextarea2"
-                            style="height: 150px"></textarea>
-                        <label for="floatingTextarea2"> Type in your review</label>
-                    </div>
-                </div>
-            </form>
-        </section>
-
-        <section id="end">
-            <div class="row row-cols-lg-2">
-                <div>
-                    <div class="d-flex align-items-center">
-                        <img width="50" src="./assets/propic.png" alt="">
-                        <div>
-                            <h4>Noemi</h4>
-                            <span>Jan 2021</span>
-                        </div>
-                    </div>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius exercitationem, modi reiciendis.
-                    </p>
-                </div>
-
-                <div>
-                    <div class="d-flex align-items-center">
-                        <img width="50" src="./assets/propic.png" alt="">
-                        <div>
-                            <h4>Enrico</h4>
-                            <span>Jan 2021</span>
-                        </div>
-                    </div>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-        </section>
-
-        <aside>
-            <div class="row">
-                <div class="card col-5">
-                    <div class="card-body">
-                        <div class="row row-cols-2 row-cols-md-2 row-cols-lg-2">
-                            <span class="card-title">Add dates to<br> see the prices</span>
-                            <p class="text-end"><span class="text-danger">★</span> 4.0, 6 reviews</p>
-                        </div>
-                        <div class="border rounded-4 overflow-hidden mt-4">
-
-                            <div class="row g-0 ">
-
-                                <div class="col-6 border-end">
-                                    <div class="pt-3 pb-3 ps-2 pe-2">
-                                        <input type="date" class="form-control border-0 p-0">
-                                    </div>
-                                </div>
-
-                                <div class="col-6">
-                                    <div class="pt-3 pb-3 ps-2 pe-2">
-                                        <input type="date" class="form-control border-0 p-0">
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="border-top pt-3 pb-3 ps-2 pe-2">
-                                <input type="text" class="form-control border-0 p-0" placeholder="Guests">
-                            </div>
-
-                        </div>
-                        <a href="#" class="btn btn-danger w-100 mt-3">Cancel Booking</a>
-                    </div>
-                </div>
-            </div>
-        </aside>
     </main>
 
     <footer id="footer">
